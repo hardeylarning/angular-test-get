@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular12-training';
+
+  languages: string[] = ['English', 'Yoruba', 'Hausa', 'Igbo'];
+
+  language: string = 'French';
+
+  addLanguage() {
+    console.log('You are here');
+    this.languages.push(this.language);
+
+    console.log(this.languages);
+    
+  }
 }
